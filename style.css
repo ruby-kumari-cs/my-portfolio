@@ -1,0 +1,706 @@
+*{
+     margin:0; 
+     padding:0;
+      box-sizing: border-box;
+     background-color: #FFF9F5 ;
+}
+/* header of the page css */
+header
+{ 
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    min-height:55px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid  #c2a6d5 ;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+#bow_logo img {
+    
+    width:85px;
+    max-width: 100%;
+}
+#name{
+    font-family:"Playwrite CA",cursive;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #58465F;
+}
+#star_symbol{
+    color: #58465F;
+    padding: 5px;
+    font-size: large;
+}
+ 
+   nav{
+    display: flex;
+    align-items: center;
+    gap:10px;
+ } 
+   
+
+ nav a{
+    display: inline-flex;
+    padding: 5px 9px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #604B72;
+    font-weight: bolder;
+    align-items: center;
+    white-space: nowrap;
+     font-family: 'Poppins',serif;
+  
+}
+nav a:hover{
+    background-color: #ebdcf6 ;
+    outline: 2px solid #604B72;
+    border-radius: 15px;
+}
+/*layout of header for smaller screens*/
+@media(max-width:768px){
+header{
+     flex-direction:column;
+     align-items: center;
+     height: auto;
+     padding: 12px;
+     gap:10px;
+}
+nav{
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 5px;
+
+}
+nav a { 
+   
+    font-size: 13px;
+    padding: 6px 9px;
+}
+}
+ /*home page css */
+ #home{
+    padding-top:120px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+ }
+ #intro{
+    width: 20%;
+
+ }
+ #illustration{
+    width:113%;
+ }
+#illustration img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#welcome{
+    padding: 10px 15px;
+    background-color: #d3b8e6;
+    border-radius: 20px;
+    color: #604B72;
+    font-weight: 600;
+  
+   
+}
+ .intro h1{
+    padding : 15px 5px;
+    font-size: 80px;
+    color: #55436D;
+ font-family:'Playfair Display',serif;
+ } 
+ .intro h2{
+    color: #5b4a6d;
+    line-height: 1.2;
+    font-size: 30px;
+ }
+ .intro p{
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 480;
+    color: #8356aa;
+    font-family: 'Playfair Display',sans-serif;
+    padding:5px;
+ }
+ .intro button{
+    padding: 10px 30px;
+    margin-top:50px;
+    margin-left:40px ;
+    border-radius: 15px;
+    background-color: #ddc9e6;
+    font-family:'poppins',sans-serif;
+ }
+/*scroll css*/
+.scroll{
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+    align-items: center;
+    gap:25px;
+}
+.scroll span{
+    width:25%;
+    height:3px;
+    background-color: #d8bde5;
+
+}
+.scroll_arrow{
+    text-align: center;
+    font-size: 30px;
+    color: #70518c;
+}
+.scroll p{
+    color: #a68bb8;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 3px;
+}
+
+@media(max-width:768px)
+{
+    #home{
+        padding-left: 20px;
+        padding-top: 200px;
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+    .intro h1{
+        font-size: 50px;
+    }
+    #illustration{
+        width: 100%;
+    }
+}
+
+/*css for about me section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding : 40px 20px;
+    background-color: #FFF9F5;
+}
+.about_heading{
+    text-align: center;
+    color: #603a81;
+    font-family:"charm",cursive;
+    padding: 20px 0;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about_heading span{
+    display: block;
+    width: 28%;
+    height: 3px;
+    background-color:#dac3e9;
+    margin: auto;
+
+}
+.about_me
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding:20px 0;
+    margin: 0 auto;
+}
+#profile_pic{
+    width:30%;
+    height: 280px;
+    overflow: hidden;
+  }
+
+#description{
+    color: #8356b1;
+    width:55%;
+    font-size: 20px;
+    line-height: 1.8;
+}
+#profile_pic img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+#education{
+    background-color: #dbcbe6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    margin-top: 5px;
+    border-radius: 60px; 
+    width: 90%;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+}
+.divider_line{
+    width: 2px;
+    height:90px;
+    background-color: #604B72;
+}
+#education h2{ 
+    align-self: center;
+    font-size: 28px;
+    color:#604B72;
+    margin: 0;
+    background-color: #dbcbe6;
+    font-family: "charm",cursive;
+}
+#hat_icon{
+    align-self: center;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#hat_icon img{
+    
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background-color:#dbcbe6 ;
+}
+
+.edu_list,.edu_list ul,.edu_list li,.edu_list strong{
+    background-color: transparent;
+}
+.edu_list{
+    
+    font-size: 19px;
+    color: #604B72;
+}
+@media(max-width:768px){
+    .about_me{
+        flex-direction: column;
+        gap:30px;
+    }
+    #profile_pic{
+        width:100%;
+    }
+    #description{
+        width:100%;
+    }
+    #education{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .divider_line{
+        display: none;
+    }
+    .about_heading{
+        font-size: 20px;
+    }
+    .edu_list li{
+        font-size:15px ;
+     text-align: center;
+     gap:10px ;
+     line-height: 1.3;
+    }
+}
+/* moving to the skills section */
+#skill{
+   margin-top: 30px;
+    padding: 95px 20px;
+    margin: auto;
+   
+}
+#skill h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #604B72;
+    font-family: "charm",cursive;
+}
+#skill h1 span{
+    display: block;
+    height:2px;
+    background-color: #a68bb8;
+    width:15%;
+    margin: auto;
+}
+#brief{
+ font-size: larger;
+    text-align: center;
+    color: #a68bb8;
+    text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+padding: 5px;
+}
+.skill_content{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:25px;
+    padding:20px;
+    margin:  30px 0;
+}
+.skill_card{
+    background-color:#e9e4f2;
+    width:250px;
+    padding:25px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 240px;
+    box-shadow: 2px 4px 12px rgba(100 ,75,130,0.15);
+}
+.skill_card h4{
+    color:#45405f;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #e9e4f2;
+    text-transform: capitalize;
+}
+.skill_card p{
+    font-size: 16px;
+    color:#45405f;
+    margin:12px 0;
+    background-color: #e9e4f2;
+    line-height: 1.6;
+ font-family:'poppins',cursive;
+}
+.skill_card span{
+    display: block;
+    height:2px;
+    background-color: #a68bb8;
+    width:65%;
+    margin: auto ;
+    margin-bottom: 40px;
+}
+.skill_card:hover{
+    border:2px solid #5b4a6d;}
+/* 
+css for project section */
+.project_content{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:25px;
+    padding:20px;
+  
+}
+#projects{
+    padding: 60px 20px 40px;
+}
+#projects h1{
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #604B72;
+    font-family: "charm",cursive;
+}
+
+#proj_name{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #604B72;
+    font-family: "charm",cursive;
+}
+#projects h1 span{
+    display: block;
+    height:2px;
+    background-color: #a68bb8;
+    width:25%;
+   margin: auto;
+    margin-top: 5px;
+    
+}
+#brief_proj{
+ font-size: larger;
+    text-align: center;
+    color: #a68bb8;
+    text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+padding: 5px;
+}
+.project_card h4{
+    color:#45405f;
+    font-size: 20px;
+    margin:10px 0;
+  background-color:#e9e4f2 ;
+    text-transform: capitalize;
+}
+.project_card p{
+    font-size: 14px;
+    color:#45405f;
+    margin:12px 0;
+    background-color: #e9e4f2;
+    line-height: 1.5;
+ font-family:'poppins',cursive;
+}
+.project_card span{
+    display: block;
+    height:2px;
+    background-color: #a68bb8;
+    width:65%;
+    margin: auto ;
+    margin-bottom: 18px;
+}
+.project_card{
+    background-color:#e9e4f2;
+    width:380px;
+   padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+     min-height: 380px;
+    box-shadow: 2px 4px 12px rgba(100 ,75,130,0.15);
+}
+.project_ss{ 
+  width: 100%;
+  height:130px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.project_ss img{
+width: 100%;
+height: 100%;
+object-fit: contain;
+display: block;
+} 
+.tech_stack{
+    display: flex;
+    justify-content: center;
+    background-color: #e9e4f2;
+    gap:12px;
+}
+.tech_stack p{
+    background-color: #d8d3e8;
+    padding:5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 0;
+}
+#end_line {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: #8356b1;
+}
+/* css for the hobbies section */
+#byd_cd{
+    padding: 75px 10px;
+    margin: auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+#byd_cd h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin:2px;
+    font-size: 40px;
+    color:#604B72;
+    font-family: "charm",cursive;
+}
+#underline{
+    display: block;
+    height:2px;
+    width:22%;
+    background-color:#d3b8e6;
+   justify-self: center;
+}
+#byd_cd h4{
+    font-size: 18px;
+    text-align: center;
+    color: #c2a6d5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top:25px; 
+    font-weight:400;
+}
+#subheading{
+    font-weight:lighter;
+    text-align: center;
+    color: #794f9e;
+    font-size:20px;
+    letter-spacing: 1.2px;
+
+}
+#bycd_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:8px;
+    gap:20px;
+
+}
+.bycd_cards{
+    width:250px;
+    min-height: 320px;
+    background-color: #e9e4f2;
+    border-radius: 12px;
+    border:  2px solid #8356b1;
+}
+.photos{
+    width:90%;
+    height:180px;
+    overflow:hidden;
+    padding:2px;
+     border-radius: 10px;
+     justify-self: center;
+     margin-top: 10px;
+}
+.photos img{
+    justify-self: center;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+    border-radius: 10px;
+    
+}
+.hobby_name{
+    justify-self: center;
+    color: #4d068bc0;
+    font-family: "charm",cursive;
+    padding:  5px 15px ;
+    font-weight: bolder;
+    margin: 5px 50px;
+    background-color: #fcfcfd;
+    border-radius: 20px;
+
+}
+.bycd_cards p{
+    background-color:#e9e4f2 ;
+    color:#9876bc;
+    line-height: 1.5;
+    padding:10px;
+    
+    font-size: 15px;
+    margin: 2px 10px;
+}
+.last_line{
+    display: flex;
+    justify-content: center;
+    margin-top:5px ;
+    align-items: center;
+    gap:15px;
+}
+.last_line span{
+    width:25%;
+    height:3px;
+    background-color: #d8bde5;
+} 
+#heart{
+    font-size:x-large;
+    font-weight: 800;
+    color: #a68bb8;
+}
+#ending{
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    font-size: larger;
+    padding:5px;
+    text-align: center;
+    color:#5e0e93;
+    font-family: "charm",cursive;
+}
+ /* css for contact section */
+ #contact{
+    padding:10px;
+    margin:5px;
+ }
+ #contact h1{
+    font-size:45px;
+    font-family: "charm",cursive;
+    color: #5b4a6d;
+    text-align: center;
+ }
+ #contact span{
+     display: block;
+    height:2px;
+    width:12%;
+    background-color:#b99acf;
+   justify-self: center;
+   margin-bottom: 5px;
+ }
+ #contact h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding:20px;
+    font-weight: lighter;
+    font-size: larger;
+    color: #9d87b1;
+ }
+ #contact p{
+    text-align: center;
+    color:#604B72;
+    line-height: 1.3;
+    font-size: 20px;
+    padding:5px;
+    width:100%;
+    justify-self: center;
+ }
+ #contact a{
+    text-decoration: none;
+ }
+
+ #contact_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    margin:25px 5px;
+ }
+ .contact_card{
+    background-color:#e9e4f2 ;
+    padding:13px;
+    border-radius: 20px;
+    min-height: 200px;
+    width:200px
+ }
+ .contact_icon{
+    background-color:#e9e4f2 !important ;
+    justify-self: center;
+    font-size: 35px;
+    
+    color: #794f9e;
+    padding:10px;
+    margin-bottom: 10px;
+ }
+ .contact_name{
+        background-color:#e9e4f2;
+    font-size: 23px;
+    font-weight: 600;
+    color: #58465F;
+    padding: 14px;
+      justify-self: center;
+ }
+ .contact_message{
+     background-color:#e9e4f2 ;
+    line-height: 1.5;
+    color: #a68bb8;
+    justify-self: center;
+    font-size: 20px;
+ }
+ #thanks{
+    font-size: xx-large;
+    font-weight: 800;
+    color: #5b4a6d;
+    text-align: center;
+    margin: 55px;
+  }  
